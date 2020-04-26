@@ -53,3 +53,7 @@ ul {
 .selected {
   font-weight: 600;
 }
+
+.winner {
+  background: #bbb;
+}
