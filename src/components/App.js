@@ -19,25 +19,21 @@ class Board extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+    const size = 3;
+    let squares = [];
+    for (let i = 0; i < size; ++i) {
+      let row = [];
+      for (let j = 0; j < size; ++j) {
+        row.push(this.renderSquare(i * size + j));
+      }
+      squares.push(
+        <div key={i} className="board-row">
+          {row}
         </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
-    );
+      );
+    }
+
+    return <div>{squares}</div>;
   }
 }
 
@@ -88,13 +84,18 @@ class Game extends React.Component {
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
     const moves = history.map((step, move) => {
-      const desc = move ? "Go to move #" + move : "Go to game start";
       const index = step.index;
+      const desc = move
+        ? `Go to move # ${move} (${1 + Math.floor(index / 3)}, ${
+            1 + (index % 3)
+          })`
+        : "Go to game start";
+
       const selected = move === this.state.stepNumber ? "selected" : "";
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)} className={selected}>
-            {desc} ({1 + Math.floor(index / 3)}, {1 + (index % 3)})
+            {desc}
           </button>
         </li>
       );
