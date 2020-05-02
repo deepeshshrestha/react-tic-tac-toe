@@ -1,6 +1,6 @@
 ## React Tic Tac Toe
 
-> This is a simple react tic tac toe exercise provided by the official ReactJs documentation.
+> This is a simple react tic tac toe exercise provided by the official ReactJs documentation. This also includes solution to the improvement, recommended by the tutorial.
 
 ## Motivation
 
