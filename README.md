@@ -1,6 +1,6 @@
 ## React Tic Tac Toe
 
-> This is a simple react tic tac toe exercise provided by the official ReactJs Documentation.
+> This is a simple react tic tac toe exercise provided by the official ReactJs documentation.
 
 ## Motivation
 
@@ -10,7 +10,7 @@ Even though I have gone through the documentation a multiple time, I never did t
 
 * ReactJs
 
-## Demon
+## Demo
 
 https://deepesh.dev/react-tic-tac-toe/
 
