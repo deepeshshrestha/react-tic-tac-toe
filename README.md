@@ -18,7 +18,7 @@ https://deepesh.dev/react-tic-tac-toe/
 
 Clone this repository
 ```
-git@github.com:deepeshshrestha/react-tic-tac-toe.git
+git clone git@github.com:deepeshshrestha/react-tic-tac-toe.git
 ```
 
 ## Installation
