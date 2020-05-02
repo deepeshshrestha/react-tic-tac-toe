@@ -1,0 +1,38 @@
+## React Tic Tac Toe
+
+> This is a simple react tic tac toe exercise provided by the official ReactJs Documentation.
+
+## Motivation
+
+Even though I have gone through the documentation a multiple time, I never did the [tutorial](https://reactjs.org/tutorial/tutorial.html).
+
+## Built With
+
+* ReactJs
+
+## Demon
+
+https://deepesh.dev/react-tic-tac-toe/
+
+## Prerequisites
+
+Clone this repository
+```
+git clone git@github.com:deepeshshrestha/react-starter.git
+```
+
+## Installation
+
+```
+npm install
+```
+
+## Run
+
+```
+npm run start
+```
+# Use
+
+Go to your browser and visit [http://localhost:8080/](http://localhost:8080/)
+
